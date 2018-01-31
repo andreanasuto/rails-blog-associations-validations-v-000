@@ -1,4 +1,4 @@
-class AddPostIdToTags < ActiveRecord::Migration
+class AddPostId < ActiveRecord::Migration
   def change
     add_column :tags, :post_id, :integer
   end
