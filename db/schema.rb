@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180131035557) do
+ActiveRecord::Schema.define(version: 20180131035917) do
 
 # Could not dump table "post_tags" because of following NoMethodError
 #   undefined method `[]' for nil:NilClass
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 20180131035557) do
     t.datetime "updated_at", null: false
     t.integer  "user_id"
     t.text     "content"
+    t.integer  "tag_id"
   end
 
   create_table "tags", force: :cascade do |t|
