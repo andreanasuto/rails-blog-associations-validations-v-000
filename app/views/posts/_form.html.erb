@@ -24,7 +24,7 @@
   <div class="field">
     <% @post.tags.each do |tag| %>
       <%= f.label :tag_id %><br>
-      <%= f.collection_check_box :tag_id, Tag.all, :id, :name %><br>
+      <%= f.collection_check_boxes :tag_id, Tag.all, :id, :name %><br>
     <% end %>
   </div>
 
