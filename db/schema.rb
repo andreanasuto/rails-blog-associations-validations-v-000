@@ -11,12 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180131034801) do
+ActiveRecord::Schema.define(version: 20180131035557) do
 
-  create_table "post_tags", force: :cascade do |t|
-    t.integer "tag_id"
-    t.integer "post_id"
-  end
+# Could not dump table "post_tags" because of following NoMethodError
+#   undefined method `[]' for nil:NilClass
 
   create_table "posts", force: :cascade do |t|
     t.string   "name"
